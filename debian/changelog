@@ -1,0 +1,5 @@
+postmarketos-tweaks (0.4.0) main; urgency=medium
+
+  * add initial packaging
+
+ -- FakeShell <fakeshell@bardia.tech>  Tue, 14 Feb 2023 21:54:46 +0330

@@ -1,0 +1,28 @@
+Source: postmarketos-tweaks
+Section: utils
+Priority: optional
+Maintainer: DebianOnMobile Maintainers <debian-on-mobile-maintainers@alioth-lists.debian.net>
+Uploaders: Bardia Moshiri <fakeshell@bardia.tech>
+Build-Depends: debhelper-compat (= 13),
+ python3,
+ libhandy-1-dev,
+ meson
+Standards-Version: 4.5.1
+Homepage: https://github.com/FakeShell/postmarkets-tweaks
+Vcs-Browser: https://github.com/FakeShell/postmarkets-tweaks
+Vcs-Git: https://github.com/FakeShell/postmarkets-tweaks.git
+Rules-Requires-Root: no
+
+Package: postmarketos-tweaks
+Architecture: any
+Depends: ${misc:Depends}, 
+ ${shlibs:Depends},
+ python3,
+ libhandy-1-0,
+ python3-yaml,
+ gir1.2-handy-1,
+ gnome-settings-daemon
+Description: Lightweight On-Screen-Keyboard based on SDL2
+ This keyboard is designed to unlock encrypted root partitions on boot
+ on mobile devices. It is automatically launched on boot, allowing the
+ user to enter their disk encryption password.
